@@ -3,9 +3,11 @@ pipeline {
   
   stages {
     stage('checkout') {
-      git "https://github.com/venddy/pipeline.git"
+      steps{
+       git "https://github.com/venddy/pipeline.git"
+      }
     }
-  }
+  
   stage('Build'){
     steps{
             sh 'mvn clean install'
