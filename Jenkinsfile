@@ -2,7 +2,6 @@ pipeline {
   agent any
   tools { 
       maven 'Maven_Home' 
-      jdk11 'JAVA_HOME' 
     }
   stages {
     stage('checkout') {
