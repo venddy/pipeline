@@ -10,10 +10,9 @@ pipeline {
   
   stage('Build'){
     steps{
-      withMaven(maven: 'Maven 3.6.3', options: []){
             bat 'mvn clean install'
     }
-    }
+    
   }
   stage('test'){
     steps{
