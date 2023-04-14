@@ -16,19 +16,5 @@ pipeline {
         sh 'mvn test'
     }
   }
-  def someMethod() {
-    // some code here
-}
-
-if (someCondition) {
-    // some code here
-} else {
-    // some code here
-}
-
-// other code here
-
-// ensure that all opening braces have a corresponding closing brace
-// and that they are in the correct order
 }
 
