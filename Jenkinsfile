@@ -30,4 +30,5 @@ if (someCondition) {
 
 // ensure that all opening braces have a corresponding closing brace
 // and that they are in the correct order
+}
 
