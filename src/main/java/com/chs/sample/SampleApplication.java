@@ -3,8 +3,6 @@ package com.chs.sample;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.chs.akr.core.AkrRestApiApplication;
-
 @SpringBootApplication
 public class SampleApplication {
 
