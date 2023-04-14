@@ -1,6 +1,10 @@
 pipeline {
   agent any
   
+   tools {
+        maven 'Maven 3.6.3'
+    }
+    
   stages {
     stage('checkout') {
       steps{
@@ -10,7 +14,9 @@ pipeline {
   
   stage('Build'){
     steps{
+      withMaven(maven: 'Maven 3.6.3', options: []){
             bat 'mvn clean install'
+    }
     }
   }
   stage('test'){
