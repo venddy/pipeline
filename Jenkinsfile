@@ -1,5 +1,10 @@
 pipeline {
   agent any
+
+    tools {
+        // Define a Maven installation with the name "Maven"
+        maven 'Maven'
+    }
   
   stages {
     stage('checkout') {
